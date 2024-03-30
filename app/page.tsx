@@ -1,10 +1,10 @@
-import Image from "next/image";
+import RecipesList from "./components/RecipesList";
 
 export default function Home() {
   return (
     <main>
-      <h1>Hello</h1>
-      <button className="btn btn-primary">Click here</button>
+      <h1>This is the recipe list</h1>
+      <RecipesList />
     </main>
   );
 }
