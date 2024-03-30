@@ -11,7 +11,7 @@ const RecipesList = () => {
     <ul>
       {recipes.map((recipe) => (
         <li key={recipe.id}>
-          <Link href={`/recipes/${recipe.name}`}>{recipe.name}</Link>
+          <Link href={`/recipes/${recipe.id}`}>{recipe.name}</Link>
         </li>
       ))}
     </ul>
