@@ -54,8 +54,7 @@ const recipes: Recipe[] = [
 ];
 
 const RecipePage = ({ params }: { params: { slug: string } }) => {
-  const recipe = recipes.find((recipe) => (recipe.id === parseInt(params.slug)));
-  console.log({ recipe });
+  const recipe = recipes.find((recipe) => recipe.id === parseInt(params.slug));
   if (!recipe) notFound();
   return (
     <div>
